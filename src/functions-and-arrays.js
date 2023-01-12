@@ -1,19 +1,38 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
-
-
+function maxOfTwoNumbers(a,b) {
+  if (a > b){
+    return a;
+  } else {
+    return b;
+  }
+}
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {}
-
-
+function findLongestWord(notWords) {
+  if (notWords.length === 0) {
+    return null;
+  } else if (notWords.length === 1) {
+    return notWords[0];
+  }
+  let theLongestWord = "";
+  notWords.forEach(element => {
+    if (element.length > theLongestWord.length) {
+      theLongestWord = element;
+    }
+  });
+  return theLongestWord;
+}
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(numbers) {
+  if (numbers.length === 0) {
+    return 0;
+  }
+}
 
 
 
@@ -26,13 +45,21 @@ function sum() {}
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers() {
+  if (averageNumbers.length === 0) {
+    return null;
+  }
+}
 
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength() {
+  if (averageWordLength.length === 0) {
+    return null;
+ }
+}
 
 // Bonus - Iteration #4.1
 function avg() {}
@@ -52,14 +79,22 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray() {
+  if (uniquifyArray.length === 0) {
+    return null;
+  }
+}
 
 
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist() {
+  if (doesWordExist.length === 0) {
+    return null;
+  }
+}
 
 
 
@@ -78,7 +113,11 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes() {
+  if (howManyTimes.length === 0) {
+    return 0;
+  }
+}
 
 
 
